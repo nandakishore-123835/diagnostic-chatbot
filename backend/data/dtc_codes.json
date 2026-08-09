@@ -1,53 +1,524 @@
 [
-    {
-        "code": "P0300",
-        "title": "Random/Multiple Cylinder Misfire Detected",
-        "description": "The engine control module detected misfires occurring randomly or across multiple cylinders.",
-        "symptoms": [
-            "Engine shaking",
-            "Check engine light",
-            "Poor acceleration",
-            "Reduced fuel economy"
-        ],
-        "possible_causes": [
-            "Faulty spark plugs",
-            "Ignition coil problems",
-            "Fuel injector problems",
-            "Vacuum leak"
-        ],
-        "severity": "High"
-    },
-    {
-        "code": "P0301",
-        "title": "Cylinder 1 Misfire Detected",
-        "description": "The engine control module detected a misfire in cylinder 1.",
-        "symptoms": [
-            "Engine shaking",
-            "Check engine light",
-            "Poor acceleration"
-        ],
-        "possible_causes": [
-            "Faulty spark plug",
-            "Bad ignition coil",
-            "Faulty fuel injector",
-            "Vacuum leak"
-        ],
-        "severity": "Medium"
-    },
-    {
-        "code": "P0420",
-        "title": "Catalyst System Efficiency Below Threshold",
-        "description": "The vehicle computer has detected that the catalytic converter may not be operating efficiently.",
-        "symptoms": [
-            "Check engine light",
-            "Reduced fuel economy",
-            "Poor engine performance"
-        ],
-        "possible_causes": [
-            "Failing catalytic converter",
-            "Faulty oxygen sensor",
-            "Exhaust leak"
-        ],
-        "severity": "Medium"
-    }
+  {
+    "code": "P0101",
+    "title": "Mass or Volume Air Flow Circuit Range/Performance Problem",
+    "description": "The engine control module detected that the mass airflow sensor readings are outside the expected range.",
+    "symptoms": [
+      "Rough idle",
+      "Poor acceleration",
+      "Reduced fuel economy",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Dirty mass airflow sensor",
+      "Air intake leak",
+      "Faulty mass airflow sensor",
+      "Clogged air filter"
+    ],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0113",
+    "title": "Intake Air Temperature Sensor Circuit High Input",
+    "description": "The engine control module detected an abnormally high voltage signal from the intake air temperature sensor.",
+    "symptoms": [
+      "Poor fuel economy",
+      "Hard starting",
+      "Poor acceleration",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Faulty intake air temperature sensor",
+      "Damaged wiring",
+      "Loose electrical connector",
+      "Open circuit"
+    ],
+    "severity": "Low"
+  },
+  {
+    "code": "P0128",
+    "title": "Coolant Thermostat Temperature Below Regulating Temperature",
+    "description": "The engine is not reaching the expected operating temperature within the required time.",
+    "symptoms": [
+      "Engine runs cooler than normal",
+      "Poor fuel economy",
+      "Heater produces insufficient heat",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Stuck-open thermostat",
+      "Faulty coolant temperature sensor",
+      "Low coolant level",
+      "Cooling system problem"
+    ],
+    "severity": "Low"
+  },
+  {
+    "code": "P0130",
+    "title": "Oxygen Sensor Circuit Malfunction Bank 1 Sensor 1",
+    "description": "The engine control module detected a malfunction in the oxygen sensor circuit.",
+    "symptoms": [
+      "Check engine light",
+      "Poor fuel economy",
+      "Rough engine operation",
+      "Increased emissions"
+    ],
+    "possible_causes": [
+      "Faulty oxygen sensor",
+      "Damaged wiring",
+      "Electrical connector problem",
+      "Exhaust leak"
+    ],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0171",
+    "title": "System Too Lean Bank 1",
+    "description": "The engine control module detected that the air-fuel mixture is too lean on bank 1.",
+    "symptoms": [
+      "Rough idle",
+      "Engine hesitation",
+      "Poor acceleration",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Vacuum leak",
+      "Dirty or faulty mass airflow sensor",
+      "Low fuel pressure",
+      "Fuel injector restriction"
+    ],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0172",
+    "title": "System Too Rich Bank 1",
+    "description": "The engine control module detected excessive fuel or insufficient air in the air-fuel mixture.",
+    "symptoms": [
+      "Poor fuel economy",
+      "Black exhaust smoke",
+      "Rough idle",
+      "Strong fuel smell"
+    ],
+    "possible_causes": [
+      "Faulty oxygen sensor",
+      "Dirty mass airflow sensor",
+      "Leaking fuel injector",
+      "Excessive fuel pressure"
+    ],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0201",
+    "title": "Injector Circuit Malfunction Cylinder 1",
+    "description": "The engine control module detected an electrical problem in the fuel injector circuit for cylinder 1.",
+    "symptoms": [
+      "Engine misfire",
+      "Rough idle",
+      "Poor acceleration",
+      "Reduced fuel economy"
+    ],
+    "possible_causes": [
+      "Faulty fuel injector",
+      "Damaged injector wiring",
+      "Poor electrical connection",
+      "Engine control module circuit problem"
+    ],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0302",
+    "title": "Cylinder 2 Misfire Detected",
+    "description": "The engine control module detected a misfire occurring in cylinder 2.",
+    "symptoms": [
+      "Engine shaking",
+      "Poor acceleration",
+      "Rough idle",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Faulty spark plug",
+      "Bad ignition coil",
+      "Faulty fuel injector",
+      "Low compression"
+    ],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0303",
+    "title": "Cylinder 3 Misfire Detected",
+    "description": "The engine control module detected a misfire occurring in cylinder 3.",
+    "symptoms": [
+      "Engine shaking",
+      "Poor acceleration",
+      "Rough idle",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Faulty spark plug",
+      "Bad ignition coil",
+      "Faulty fuel injector",
+      "Low compression"
+    ],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0304",
+    "title": "Cylinder 4 Misfire Detected",
+    "description": "The engine control module detected a misfire occurring in cylinder 4.",
+    "symptoms": [
+      "Engine shaking",
+      "Poor acceleration",
+      "Rough idle",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Faulty spark plug",
+      "Bad ignition coil",
+      "Faulty fuel injector",
+      "Low compression"
+    ],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0325",
+    "title": "Knock Sensor Circuit Malfunction",
+    "description": "The engine control module detected an electrical or signal problem with the knock sensor circuit.",
+    "symptoms": [
+      "Reduced engine performance",
+      "Poor acceleration",
+      "Reduced fuel economy",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Faulty knock sensor",
+      "Damaged wiring",
+      "Poor electrical connection",
+      "Engine vibration or mechanical problem"
+    ],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0335",
+    "title": "Crankshaft Position Sensor Circuit Malfunction",
+    "description": "The engine control module is not receiving a valid signal from the crankshaft position sensor.",
+    "symptoms": [
+      "Engine may not start",
+      "Engine stalling",
+      "Rough running",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Faulty crankshaft position sensor",
+      "Damaged wiring",
+      "Poor electrical connection",
+      "Timing or reluctor wheel problem"
+    ],
+    "severity": "High"
+  },
+  {
+    "code": "P0340",
+    "title": "Camshaft Position Sensor Circuit Malfunction",
+    "description": "The engine control module detected an incorrect or missing signal from the camshaft position sensor.",
+    "symptoms": [
+      "Hard starting",
+      "Engine stalling",
+      "Poor acceleration",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Faulty camshaft position sensor",
+      "Damaged wiring",
+      "Poor electrical connection",
+      "Timing system problem"
+    ],
+    "severity": "High"
+  },
+  {
+    "code": "P0401",
+    "title": "Exhaust Gas Recirculation Flow Insufficient",
+    "description": "The engine control module detected insufficient exhaust gas recirculation flow.",
+    "symptoms": [
+      "Rough idle",
+      "Engine hesitation",
+      "Reduced performance",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Clogged EGR passage",
+      "Faulty EGR valve",
+      "Blocked EGR tube",
+      "Faulty EGR control solenoid"
+    ],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0442",
+    "title": "Evaporative Emission System Leak Detected Small Leak",
+    "description": "The vehicle computer detected a small leak in the evaporative emissions system.",
+    "symptoms": [
+      "Check engine light",
+      "Fuel smell",
+      "Usually no noticeable drivability symptoms"
+    ],
+    "possible_causes": [
+      "Loose fuel cap",
+      "Damaged EVAP hose",
+      "Faulty purge valve",
+      "Small leak in EVAP system"
+    ],
+    "severity": "Low"
+  },
+  {
+    "code": "P0455",
+    "title": "Evaporative Emission System Leak Detected Large Leak",
+    "description": "The vehicle computer detected a significant leak in the evaporative emissions system.",
+    "symptoms": [
+      "Check engine light",
+      "Fuel smell",
+      "Possible difficulty refueling"
+    ],
+    "possible_causes": [
+      "Missing fuel cap",
+      "Loose fuel cap",
+      "Disconnected EVAP hose",
+      "Large EVAP system leak"
+    ],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0500",
+    "title": "Vehicle Speed Sensor Malfunction",
+    "description": "The vehicle control system detected an invalid or missing vehicle speed signal.",
+    "symptoms": [
+      "Speedometer malfunction",
+      "Transmission shifting problems",
+      "Cruise control may not work",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Faulty vehicle speed sensor",
+      "Damaged wiring",
+      "Poor electrical connection",
+      "Transmission-related sensor problem"
+    ],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0700",
+    "title": "Transmission Control System Malfunction",
+    "description": "The engine control module received an indication that the transmission control system has detected a fault.",
+    "symptoms": [
+      "Harsh shifting",
+      "Delayed shifting",
+      "Transmission warning light",
+      "Reduced vehicle performance"
+    ],
+    "possible_causes": [
+      "Transmission sensor fault",
+      "Transmission solenoid problem",
+      "Low or contaminated transmission fluid",
+      "Transmission control module problem"
+    ],
+    "severity": "High"
+  },
+  {
+    "code": "P0715",
+    "title": "Input/Turbine Speed Sensor Circuit Malfunction",
+    "description": "The transmission control system detected an invalid signal from the input or turbine speed sensor.",
+    "symptoms": [
+      "Erratic shifting",
+      "Transmission slipping",
+      "Delayed shifting",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Faulty input speed sensor",
+      "Damaged wiring",
+      "Poor electrical connection",
+      "Internal transmission problem"
+    ],
+    "severity": "High"
+  },
+  {
+    "code": "P0741",
+    "title": "Torque Converter Clutch Circuit Performance or Stuck Off",
+    "description": "The transmission control system detected that the torque converter clutch is not operating as expected.",
+    "symptoms": [
+      "Poor fuel economy",
+      "Transmission slipping",
+      "Engine RPM remains high at cruising speed",
+      "Transmission overheating"
+    ],
+    "possible_causes": [
+      "Faulty torque converter clutch solenoid",
+      "Low or contaminated transmission fluid",
+      "Worn torque converter clutch",
+      "Internal transmission problem"
+    ],
+    "severity": "High"
+  },
+  {
+    "code": "P0016",
+    "title": "Crankshaft Position Camshaft Position Correlation Bank 1 Sensor A",
+    "description": "The engine control module detected that the crankshaft and camshaft position signals are not synchronized as expected.",
+    "symptoms": [
+      "Hard starting",
+      "Rough running",
+      "Engine misfire",
+      "Poor acceleration"
+    ],
+    "possible_causes": [
+      "Incorrect engine timing",
+      "Stretched timing chain",
+      "Faulty camshaft sensor",
+      "Faulty crankshaft sensor"
+    ],
+    "severity": "High"
+  },
+  {
+    "code": "P0087",
+    "title": "Fuel Rail/System Pressure Too Low",
+    "description": "The engine control module detected fuel pressure below the expected operating range.",
+    "symptoms": [
+      "Hard starting",
+      "Poor acceleration",
+      "Engine hesitation",
+      "Engine stalling"
+    ],
+    "possible_causes": [
+      "Weak fuel pump",
+      "Clogged fuel filter",
+      "Fuel pressure regulator problem",
+      "Restricted fuel line"
+    ],
+    "severity": "High"
+  },
+  {
+    "code": "P0234",
+    "title": "Engine Overboost Condition",
+    "description": "The engine control module detected turbocharger or supercharger boost pressure above the expected limit.",
+    "symptoms": [
+      "Reduced engine power",
+      "Engine hesitation",
+      "Check engine light",
+      "Possible limp mode"
+    ],
+    "possible_causes": [
+      "Wastegate malfunction",
+      "Boost control solenoid problem",
+      "Turbocharger control problem",
+      "Faulty boost pressure sensor"
+    ],
+    "severity": "High"
+  },
+  {
+    "code": "P0299",
+    "title": "Turbocharger or Supercharger Underboost Condition",
+    "description": "The engine control module detected that the turbocharger or supercharger is producing less boost than expected.",
+    "symptoms": [
+      "Reduced engine power",
+      "Poor acceleration",
+      "Engine hesitation",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Boost leak",
+      "Faulty wastegate",
+      "Turbocharger problem",
+      "Faulty boost pressure sensor"
+    ],
+    "severity": "High"
+  },
+  {
+    "code": "P0117",
+    "title": "Engine Coolant Temperature Sensor Circuit Low Input",
+    "description": "The engine control module detected a lower-than-expected voltage signal from the engine coolant temperature sensor.",
+    "symptoms": [
+      "Engine overheating or incorrect temperature indication",
+      "Poor fuel economy",
+      "Cooling fan problems",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Faulty coolant temperature sensor",
+      "Shorted wiring",
+      "Poor electrical connection",
+      "Cooling system problem"
+    ],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0300",
+    "title": "Random/Multiple Cylinder Misfire Detected",
+    "description": "The engine control module detected misfires occurring randomly or across multiple cylinders.",
+    "symptoms": [
+      "Engine shaking",
+      "Check engine light",
+      "Poor acceleration",
+      "Reduced fuel economy"
+    ],
+    "possible_causes": [
+      "Faulty spark plugs",
+      "Ignition coil problems",
+      "Fuel injector problems",
+      "Vacuum leak",
+      "Low engine compression",
+      "Incorrect fuel pressure"
+    ],
+    "severity": "High"
+  },
+  {
+    "code": "P0420",
+    "title": "Catalyst System Efficiency Below Threshold",
+    "description": "The vehicle computer detected that the catalytic converter may not be operating efficiently.",
+    "symptoms": [
+      "Check engine light",
+      "Reduced fuel economy",
+      "Poor engine performance",
+      "Increased emissions"
+    ],
+    "possible_causes": [
+      "Failing catalytic converter",
+      "Faulty oxygen sensor",
+      "Exhaust leak",
+      "Engine misfire causing catalyst damage"
+    ],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0507",
+    "title": "Idle Control System RPM Higher Than Expected",
+    "description": "The engine control module detected that engine idle speed is higher than the expected value.",
+    "symptoms": [
+      "High idle speed",
+      "Rough idle",
+      "Engine RPM fluctuates",
+      "Check engine light"
+    ],
+    "possible_causes": [
+      "Vacuum leak",
+      "Dirty throttle body",
+      "Faulty idle air control system",
+      "Throttle position problem"
+    ],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0606",
+    "title": "ECM/PCM Processor Fault",
+    "description": "The vehicle computer detected an internal processor or control module fault.",
+    "symptoms": [
+      "Engine may not start",
+      "Engine stalling",
+      "Multiple warning lights",
+      "Erratic engine operation"
+    ],
+    "possible_causes": [
+      "Faulty engine control module",
+      "Power supply problem",
+      "Poor ground connection",
+      "Software or internal processor failure"
+    ],
+    "severity": "Critical"
+  }
 ]

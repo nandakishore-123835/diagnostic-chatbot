@@ -1,5 +1,6 @@
 import json
 import os
+import re
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,5 +22,15 @@ def find_dtc(code):
     for dtc in dtc_data:
         if dtc["code"] == code:
             return dtc
+
+    return None
+
+
+def extract_dtc_code(text):
+
+    match = re.search(r"\b[PCBU][0-9]{4}\b", text.upper())
+
+    if match:
+        return match.group(0)
 
     return None

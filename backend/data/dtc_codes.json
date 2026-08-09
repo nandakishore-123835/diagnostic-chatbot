@@ -1,0 +1,53 @@
+[
+    {
+        "code": "P0300",
+        "title": "Random/Multiple Cylinder Misfire Detected",
+        "description": "The engine control module detected misfires occurring randomly or across multiple cylinders.",
+        "symptoms": [
+            "Engine shaking",
+            "Check engine light",
+            "Poor acceleration",
+            "Reduced fuel economy"
+        ],
+        "possible_causes": [
+            "Faulty spark plugs",
+            "Ignition coil problems",
+            "Fuel injector problems",
+            "Vacuum leak"
+        ],
+        "severity": "High"
+    },
+    {
+        "code": "P0301",
+        "title": "Cylinder 1 Misfire Detected",
+        "description": "The engine control module detected a misfire in cylinder 1.",
+        "symptoms": [
+            "Engine shaking",
+            "Check engine light",
+            "Poor acceleration"
+        ],
+        "possible_causes": [
+            "Faulty spark plug",
+            "Bad ignition coil",
+            "Faulty fuel injector",
+            "Vacuum leak"
+        ],
+        "severity": "Medium"
+    },
+    {
+        "code": "P0420",
+        "title": "Catalyst System Efficiency Below Threshold",
+        "description": "The vehicle computer has detected that the catalytic converter may not be operating efficiently.",
+        "symptoms": [
+            "Check engine light",
+            "Reduced fuel economy",
+            "Poor engine performance"
+        ],
+        "possible_causes": [
+            "Failing catalytic converter",
+            "Faulty oxygen sensor",
+            "Exhaust leak"
+        ],
+        "severity": "Medium"
+    }
+]
